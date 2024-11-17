@@ -159,6 +159,46 @@ header {
     font-size: 20px;
 }
 
+
+
+
+.search-box {
+    background-color: #F2BB13;
+    border-radius: 40px;
+    height: 40px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.search-txt {
+    border: none;
+    background: none;
+    padding: 0;
+    color: black;
+    font-size: 16px;
+    line-height: 40px;
+    width: 0;
+    transition: .5s;
+}
+
+.search-btn {
+    display: inline;
+    width: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-box:hover > .search-txt {
+    width: 240px;
+    padding: 0 6px;
+}
+
+
 .imagens {
     width: 100%; 
     height: auto; 
@@ -169,11 +209,20 @@ header {
 }
 
 .bordas_jogos {
-    border: lightgray 2px solid;
+    border: black 5px solid;
     border-radius: 10px;
     width: 400px;
 }
 
+.legenda_jogos{
+    color: white;
+    font-weight: bold;
+    font-size: large;
+}
+
+body {
+    background-image: url('/assets/img/fundo.png');
+}
 .footer {
     background-color: #44558d;
     color: white;
