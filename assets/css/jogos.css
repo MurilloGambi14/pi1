@@ -65,24 +65,30 @@
 
 
 .imagens {
-    width: 100%; 
-    height: auto; 
+    width: 200px;
+    height: 180px; 
     display: block;
-    object-fit: cover;
-    margin-top: 15px;
-    margin-bottom: 15px;
+    object-fit: cover; 
+    margin: 15px auto; 
 }
 
 .bordas_jogos {
     border: black 5px solid;
     border-radius: 10px;
-    width: 400px;
+    width: 350px;
+    background-color: lightgray;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+    
 }
 
 .legenda_jogos{
-    color: white;
+    color: black;
     font-weight: bold;
-    font-size: large;
+    font-size: 20px;
 }
 
 body {

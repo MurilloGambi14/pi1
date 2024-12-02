@@ -1,7 +1,7 @@
 .catalogo_titulo {
     font-family:'Luckiest Guy';
     font-weight:'bold';
-    font-size: 40px;
+    font-size: 60px;
 }
 body {
     background-color: #FFB676;
@@ -18,6 +18,7 @@ body {
 .imagem {
     width: 463px;
     object-fit: cover;
+    height: 315px;
 }
 
 .legenda {
@@ -28,5 +29,38 @@ body {
     width: 850px;
     margin: 0 auto;
     font-size: 17px;
-    font-family: 'Ubuntu';
+    font-family: 'Ubuntu', sans-serif;
+    color: black;
 }
+
+.botao_voltar {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    color: white; 
+    background-color: red;
+    border: none;
+    border-radius: 50px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+
+.botao_voltar:hover {
+    background-color: red;
+    transform: scale(1.05);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+}
+
+
+.botao_voltar:active {
+    transform: scale(0.95);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
