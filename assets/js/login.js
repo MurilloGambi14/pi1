@@ -19,7 +19,7 @@ document.getElementById('loginForm').addEventListener('submit', async function (
     if(response.ok) {
       showToast('Login realizado com sucesso! Redirecionando...', 'success')
       setTimeout(() => {
-        window.location.href = '../jogos.html'
+        window.location.href = '../dashboard.html'
       }, 2000)
     } else {
       showToast('Erro durante a realização do login!', 'error')
