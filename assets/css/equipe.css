@@ -1,5 +1,4 @@
 
-
 html body {
     background-color: #eeefff;
 }
@@ -118,10 +117,10 @@ footer {
     margin-top: 10px;
 }
 .footer .contact-info {
-    font-size: 20px;
+    font-size: 15px;
 }
 .footer .social-icons a {
-    margin-right: 15px;
+    margin-right: 20px;
     font-size: 40px;
   
 }

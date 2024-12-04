@@ -1,16 +1,20 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/tela_login.css">
-    <link rel="stylesheet" href="assets/css/navbar.css">
     <link rel="shortcut icon" href="assets/img/logo definitivo sem borda.png" type="image/x-icon">
     <title>Contatos</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vanillatoasts/vanillatoasts.css">
+    <script src="https://cdn.jsdelivr.net/npm/vanillatoasts/vanillatoasts.js"></script>
+    <link rel="stylesheet" href="/assets/css/navbar.css">
 </head>
+
 <body>
-    
+
 
     <header class="container-fluid">
         <nav class="nav-bar">
@@ -25,7 +29,8 @@
                     <li class="nav-item"><a href="beneficios.html" class="nav-link"> Sobre</a></li>
                     <li class="nav-item"><a href="equipe.html" class="nav-link">Equipe</a></li>
                     <li class="nav-item"><a href="contatos.html" class="nav-link">Contato</a></li>
-                    <li class="nav-item login-button"><button class="login-button"><a href="tela_login.html">Entrar</a></button></li>
+                    <li class="nav-item login-button"><button class="login-button"><a
+                                href="tela_login.html">Entrar</a></button></li>
 
                 </ul>
             </div>
@@ -38,15 +43,16 @@
         <div class="mobile-menu">
             <ul>
                 <li class="nav-item"><a href="index.html" class="nav-link">Início</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Jogos</a></li>
+                <li class="nav-item"><a href="jogos.html" class="nav-link">Jogos</a></li>
                 <li class="nav-item"><a href="beneficios.html" class="nav-link">Sobre</a></li>
                 <li class="nav-item"><a href="equipe.html" class="nav-link">Equipe</a></li>
                 <li class="nav-item"><a href="contatos.html" class="nav-link">Contato</a></li>
-                <div class="login-button">
-                    <button><a href="tela_login.html">Entrar</a></button>
-                </div>
+                <li class="nav-item login-button">
+                    <button class="login-button">
+                        <a href="tela_login.html" id="loginLinkMobile">Entrar</a>
+                    </button>
+                </li>
             </ul>
-
         </div>
     </header>
 
@@ -57,22 +63,25 @@
                 <div class="user_card">
                     <div class="d-flex justify-content-center">
                         <div class="brand_logo_container">
-                            <img src="assets/img/e4ac0a2b-6586-400b-a7a3-52dad145994a.png" class="brand_logo" alt="Logo PassaTempo">
+                            <img src="assets/img/e4ac0a2b-6586-400b-a7a3-52dad145994a.png" class="brand_logo"
+                                alt="Logo PassaTempo">
                         </div>
                     </div>
                     <div class="d-flex justify-content-center form_container">
-                        <form>
+                        <form id="loginForm">
                             <div class="input-group mb-3">
                                 <div class="input-group-append">
                                     <span class="input-group-text"><i data-lucide="user"></i></span>
                                 </div>
-                                <input type="text" name="" class="form-control input_user" value="" placeholder="Usuário">
+                                <input id='username' type="text" name="" class="form-control input_user" value=""
+                                    placeholder="Usuário">
                             </div>
                             <div class="input-group mb-2">
                                 <div class="input-group-append">
                                     <span class="input-group-text"><i data-lucide="key-round"></i></span>
                                 </div>
-                                <input type="password" name="" class="form-control input_senha" value="" placeholder="Senha">
+                                <input id='password' type="password" name="" class="form-control input_senha" value=""
+                                    placeholder="Senha">
                             </div>
                             <div class="form-group">
                                 <div class="custom-control custom-checkbox">
@@ -80,12 +89,12 @@
                                     <label class="custom-control-label" for="customControlInline">Lembrar-me</label>
                                 </div>
                             </div>
-                                <div class="d-flex justify-content-center mt-3 login_container">
-                         <button type="button" name="button" class="btn login_btn">Entrar</button>
-                       </div>
+                            <div class="d-flex justify-content-center mt-3 login_container">
+                                <button type="submit" name="button" class="btn login_btn" id="loginBtn">Entrar</button>
+                            </div>
                         </form>
                     </div>
-            
+
                     <div class="mt-4">
                         <div class="d-flex justify-content-center links">
                             Não possui uma conta?&nbsp;<a href="#" class="ml-2">Registre-se</a>
@@ -99,30 +108,14 @@
         </div>
     </main>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     <script src="https://unpkg.com/lucide@latest"></script>
     <script>
-      lucide.createIcons();
+        lucide.createIcons();
     </script>
 
     <script src="assets/js/script.js"></script>
+    <script src="assets/js/login.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>

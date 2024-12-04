@@ -5,12 +5,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/indexcss.css">
-    <link rel="stylesheet" href="assets/css/navbar.css">
+    <link rel="stylesheet" href="assets/css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="shortcut icon" href="assets/img/logo definitivo sem borda.png" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
     <title>Home PassaTempo Educativo</title>
+ 
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.1/mdb.min.css" rel="stylesheet" />
+
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="/assets/css/navbar.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.1/mdb.min.js"></script>
+
 </head>
 
 <body>
@@ -22,12 +30,17 @@
             </div>
             <div class="nav-list">
                 <ul>
-                    <li class="nav-item"><a href="index.html" class="nav-link border-bottom border-white border-2">Início</a></li>
+                    <li class="nav-item"><a href="index.html"
+                            class="nav-link border-bottom border-white border-2">Início</a></li>
                     <li class="nav-item"><a href="jogos.html" class="nav-link">Jogos</a></li>
                     <li class="nav-item"><a href="beneficios.html" class="nav-link"> Sobre</a></li>
                     <li class="nav-item"><a href="equipe.html" class="nav-link">Equipe</a></li>
                     <li class="nav-item"><a href="contatos.html" class="nav-link">Contato</a></li>
-                    <li class="nav-item login-button"><button class="login-button"><a href="tela_login.html">Entrar</a></button></li>
+                    <li class="nav-item login-button">
+                        <button class="login-button">
+                            <a href="tela_login.html" id="loginLink">Entrar</a>
+                        </button>
+                    </li>
 
                 </ul>
             </div>
@@ -44,98 +57,73 @@
                 <li class="nav-item"><a href="beneficios.html" class="nav-link">Sobre</a></li>
                 <li class="nav-item"><a href="equipe.html" class="nav-link">Equipe</a></li>
                 <li class="nav-item"><a href="contatos.html" class="nav-link">Contato</a></li>
-                <div class="login-button">
-                    <button><a href="tela_login.html">Entrar</a></button>
-                </div>
+                <li class="nav-item login-button">
+                    <button class="login-button">
+                        <a href="tela_login.html" id="loginLinkMobile">Entrar</a>
+                    </button>
+                </li>
             </ul>
         </div>
     </header>
 
 
-<main>
-
-        <!-- Conteúdo principal -->
+    <main>
         <div class="container-fluid mt-5">
-            <div class="row align-items-center">
-                <!-- Caixa 1 -->
-                <div class="col-md-6 p-3 fotos">
-                    <div class="yellow-box">
-                        <p>
-                            A Jogoteca de todos os tempos e culturas é uma grande aula de história, geografia, matemática e raciocínio lógico, com jogos de tabuleiros de diversos lugares do mundo, em que é possível levar a todos para uma viagem aos cinco continentes, utilizando de um saber mais sobre diferentes culturas. Possuímos um acervo com aproximadamente 180 jogos com origens em diferentes países e fases do tempo, onde os jogos apresentam temas variados e trabalham diversas habilidades como raciocínio, estratégia, entre outros.
-                        </p>
-                    </div>
+            <div class="row align-items-center" id='content-container'></div>
+            <h1 class="d-flex justify-content-center" style="color: white;">Alguns feedbacks sobre nosso trabalho:</h1>
+            <div id="carouselExampleControls" class="carousel slide text-center carousel-dark mt-4 mb-4 container"
+                data-mdb-ride="carousel" style="background-color: white; padding: 2rem; border-radius: 5px;">
+                <div class="carousel-inner" id="carouselContent">
                 </div>
-                <div class="col-md-6 p-0"></div>
-    
-                <!-- Caixa 2 -->
-                <div class="col-md-6 "></div> 
-                <div class="col-md-6 p-3">
-                    <div class="yellow-box">
-                        <p>
-                            Passatempo Educativo é uma organização não governamental, sem fins lucrativos, que desenvolve projetos na área educacional, cultural e de preservação ambiental. Reconhecida pelo Ministério da Justiça como OSCIP – Organização Social Civil de Interesse Público sob nº 08071005566.
-                        </p>
-                    </div>
-                </div>
-    
-                <!-- Caixa 3 -->
-                <div class="col-md-6 caixa3 p-3">
-                    <div class="yellow-box">
-                        <p>
-                            Na área da educação nossos projetos têm como objetivos dar continuidade no processo ensino-aprendizagem através de situações práticas com atividades nas escolas, excursões, visitas monitoradas, jogos, workshops, palestras, jogos de tabuleiro, além de elaboração de material pedagógico complementar.
-                        </p>
-                    </div>
-                </div>
-                <div class="col-md-6 p-0"></div>
+                <button class="carousel-control-prev" type="button" data-mdb-target="#carouselExampleControls"
+                    data-mdb-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-mdb-target="#carouselExampleControls"
+                    data-mdb-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
         </div>
+    </main>
+    <footer class="footer text-center text-md-start">
+        <div class="container">
+            <div class="row align-items-center d-flexs flex-row">
+                <div class="col-md-6">
+                    <h5>Fique em Contato</h5>
+                    <p>Entre em contato em nossas redes sociais ou nos contacte diretamente.</p>
+                    <div class="social-icons">
+                        <a href="#" aria-label="Instagram"><i class="bi bi-instagram icon"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="bi bi-youtube icon"></i></a>
+                        <a href="#" aria-label="Facebook"><i class="bi bi-facebook icon"></i></a>
+                    </div>
+                    <div class="contact-info mt-3">
+                        <p><i class="bi bi-telephone-fill"></i> (11) 9 9757-9540</p>
+                        <p><i class="bi bi-envelope-fill"></i> <a
+                                href="mailto:passatempo@passatempoeducativo.org.br">passatempo@passatempoeducativo.org.br</a>
+                        </p>
+                    </div>
+                </div>
+                <div id="qr-code-area">
+                    <div class="container-fluid">
+                        <div class="square1"></div>
+                        <div class="square2"></div>
 
-
-    </div>
-
-
-    
-</main>
-
-
-
-
-
-
-<footer class="footer text-center text-md-start">
-    <div class="container">
-      <div class="row align-items-center d-flexs flex-row">
-        <div class="col-md-6">
-          <h5>Fique em Contato</h5>
-          <p>Entre em contato em nossas redes sociais ou nos contacte diretamente.</p>
-          <div class="social-icons">
-            <a href="#" aria-label="Instagram"><i class="bi bi-instagram icon"></i></a>
-            <a href="#" aria-label="YouTube"><i class="bi bi-youtube icon"></i></a>
-            <a href="#" aria-label="Facebook"><i class="bi bi-facebook icon"></i></a>
-          </div>
-          <div class="contact-info mt-3">
-            <p><i class="bi bi-telephone-fill"></i> (11) 9 9757-9540</p>
-            <p><i class="bi bi-envelope-fill"></i> <a href="mailto:passatempo@passatempoeducativo.org.br">passatempo@passatempoeducativo.org.br</a></p>
-          </div>
-        </div>
-        <div id="qr-code-area">
-            <div class="container-fluid">
-                <div class="square1"></div>
-                <div class="square2"></div>
-
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-4">
+                <small>Copyright © 2023 Passatempo Educativo. Todos os Direitos Reservados.</small>
             </div>
         </div>
-      </div>
-      <div class="text-center mt-4">
-        <small>Copyright © 2023 Passatempo Educativo. Todos os Direitos Reservados.</small>
-      </div>
-    </div>
-  </footer>
-
-
-
-
+    </footer>
 
     <script src="assets/js/script.js"></script>
+    <script src="assets/js/index-texts.js"></script>
+    <script src="assets/js/testimonials.js"></script>
+    <script src="assets/js/navbar.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 

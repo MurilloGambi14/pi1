@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/tela_login.css">
+  <link rel="shortcut icon" href="assets/img/logo definitivo sem borda.png" type="image/x-icon">
+  <title>Contatos</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vanillatoasts/vanillatoasts.css">
+  <link rel="stylesheet" href="/assets/css/navbar.css">
+  <script src="https://cdn.jsdelivr.net/npm/vanillatoasts/vanillatoasts.js"></script>
+</head>
+
+<body>
+  <header class="container-fluid">
+    <nav class="nav-bar">
+      <div class="logo">
+        <img src="assets/img/e4ac0a2b-6586-400b-a7a3-52dad145994a.png" alt="imagem logo PassaTempo"
+          class="logo_tamanho">
+      </div>
+      <div class="nav-list">
+        <ul>
+          <li class="nav-item"><a href="index.html" class="nav-link">Início</a></li>
+          <li class="nav-item"><a href="jogos.html" class="nav-link">Jogos</a></li>
+          <li class="nav-item"><a href="beneficios.html" class="nav-link"> Sobre</a></li>
+          <li class="nav-item"><a href="equipe.html" class="nav-link">Equipe</a></li>
+          <li class="nav-item"><a href="contatos.html" class="nav-link">Contato</a></li>
+          <li class="nav-item login-button"><button class="login-button"><a href="tela_login.html"
+                id='loginLink'>Entrar</a></button>
+          </li>
+
+        </ul>
+      </div>
+
+
+      <div class="mobile-menu-icon">
+        <button onclick="menuShow()"><img class="icon" src="assets/img/menu_white_36dp.svg" alt=""></button>
+      </div>
+    </nav>
+    <div class="mobile-menu">
+      <ul>
+        <li class="nav-item"><a href="index.html" class="nav-link">Início</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">Jogos</a></li>
+        <li class="nav-item"><a href="beneficios.html" class="nav-link">Sobre</a></li>
+        <li class="nav-item"><a href="equipe.html" class="nav-link">Equipe</a></li>
+        <li class="nav-item"><a href="contatos.html" class="nav-link">Contato</a></li>
+        <div class="login-button">
+          <button><a href="tela_login.html" id="loginLinkMobile">Entrar</a></button>
+        </div>
+      </ul>
+
+    </div>
+  </header>
+
+  <div class="container mt-5">
+    <h2 class="text-center mb-4">Feedbacks</h2>
+
+    <div class="mb-3">
+      <label for="name" class="form-label">Seu Nome</label>
+      <input type="text" class="form-control" id="name" placeholder="Digite seu nome" required>
+    </div>
+
+    <div class="mb-3">
+      <textarea name="feedback" id="feedbackTextarea" class="form-control" rows="4"
+        placeholder="Insira o texto do feedback a ser adicionado" required></textarea>
+    </div>
+
+    <div class="text-center">
+      <button class="btn btn-primary" onclick="sendFeedback()">Adicionar feedback</button>
+    </div>
+
+    <h3 class="mt-5">Feedbacks Enviados</h3>
+    <div id="feedbackList">
+      <table class="table mt-3">
+        <thead>
+          <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">Feedback</th>
+            <th scope="col">Ações</th>
+          </tr>
+        </thead>
+        <tbody id="feedbackTableBody">
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="container mt-5">
+    <h2 class="text-center mb-4">Textos</h2>
+
+    <h3 class="mt-5">Textos Disponíveis</h3>
+    <div id="textList">
+      <table class="table mt-3">
+        <thead>
+          <tr>
+            <th scope="col">Categoria</th>
+            <th scope="col">Conteúdo</th>
+            <th scope="col">Ações</th>
+          </tr>
+        </thead>
+        <tbody id="textTableBody">
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="container mt-5">
+    <h2 class="text-center mb-4">Atualizar Imagem do Jogo</h2>
+
+    <div class="mb-3">
+      <label for="gameSelect" class="form-label">Selecione o Jogo</label>
+      <select class="form-control" id="gameSelect">
+        <option value="" disabled selected>Escolha um jogo...</option>
+      </select>
+    </div>
+
+    <div class="mb-3">
+      <label for="imageLink" class="form-label">Link da Nova Imagem</label>
+      <input type="text" class="form-control" id="imageLink" placeholder="Cole o link da nova imagem" required>
+    </div>
+
+    <div class="text-center">
+      <button class="btn btn-primary" onclick="updateGameImage()">Atualizar Imagem</button>
+    </div>
+  </div>
+
+
+  <script src="script.js"></script>
+
+
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script>
+    lucide.createIcons();
+  </script>
+
+  <script src="assets/js/script.js"></script>
+  <script src="assets/js/login.js"></script>
+  <script src="assets/js/dashboard.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

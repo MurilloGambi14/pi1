@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Equipe</title>
     <link rel="stylesheet" href="assets/css/equipe.css">
-    <link rel="stylesheet" href="assets/css/navbar.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="shortcut icon" href="assets/img/logo definitivo sem borda.png" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/navbar.css">
 </head>
 
 <body>
@@ -28,8 +28,8 @@
                     <li class="nav-item"><a href="equipe.html"
                             class="nav-link border-bottom border-white border-2">Equipe</a></li>
                     <li class="nav-item"><a href="contatos.html" class="nav-link">Contato</a></li>
-                    <li class="nav-item login-button"><button class="login-button"><a
-                                href="tela_login.html">Entrar</a></button></li>
+                    <li class="nav-item login-button"><button class="login-button"><a href="tela_login.html"
+                                id="loginLink">Entrar</a></button></li>
 
                 </ul>
             </div>
@@ -42,199 +42,75 @@
         <div class="mobile-menu">
             <ul>
                 <li class="nav-item"><a href="index.html" class="nav-link">Início</a></li>
-                <li class="nav-item"><a href="jogos.html    " class="nav-link">Jogos</a></li>
+                <li class="nav-item"><a href="jogos.html" class="nav-link">Jogos</a></li>
                 <li class="nav-item"><a href="beneficios.html" class="nav-link">Sobre</a></li>
                 <li class="nav-item"><a href="equipe.html" class="nav-link">Equipe</a></li>
                 <li class="nav-item"><a href="contatos.html" class="nav-link">Contato</a></li>
-                <div class="login-button">
-                    <button><a href="tela_login.html">Entrar</a></button>
-                </div>
+                <li class="nav-item login-button">
+                    <button class="login-button">
+                        <a href="tela_login.html" id="loginLinkMobile">Entrar</a>
+                    </button>
+                </li>
             </ul>
-
         </div>
     </header>
 
-
     <main>
-
-            <div id="fundo_como">
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="d-flex align-items-center justify-content-center mt-4">
-                            <h1 class="borda">Como Funciona:</h1>
-                        </div>
-                    </div>
-                </div>
-                <div class="container justify-content-center align-items-center d-flex">
-                    <div class="row align-items-center">
-                        <div>
-                            <p style="color: white; font-size: 18px; font-weight: bold;"
-                                class="rounded-3 p-4 ">Oficinas: Uma série de oficinas e workshops ligados a temas culturais,
-                                que incentivem a criatividade dos participantes como construção de brinquedos com sucata,
-                                contação de histórias e rodas cantadas. Cada mês temos uma temática diferente que é direcionada
-                                ao público infanto-juvenil. O horário e dia das oficinas é acertado da escola e pode ser feito
-                                um treinamento para que os educadores apliquem os jogos com suas respectivas turmas.
-                            </p>
-                        </div>
+        <div id="fundo_como">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="d-flex align-items-center justify-content-center mt-4">
+                        <h1 class="borda">Como Funciona:</h1>
                     </div>
                 </div>
             </div>
-
-        <div class="container-fluid fundo_equipe">
-            <div class="row align-items-center">
-                <!-- Caixa 1 -->
-                <div class="col-md-6 p-3 fotos">
-                    <div id="box_equipe2">
-                        <p>
-                            1° Passo: Apresentação do projeto para professores da instituição
-                            Neste primeiro passo, organizamos uma reunião ou evento de apresentação para introduzir o
-                            conceito do projeto Jogoteca aos professores da instituição. O objetivo é explicar como as
-                            oficinas e jogos podem complementar o currículo escolar e beneficiar o desenvolvimento das
-                            crianças, tanto em termos de habilidades cognitivas quanto emocionais. Também é um momento
-                            para demonstrar como o projeto pode ser ajustado para diferentes faixas etárias e
-                            necessidades pedagógicas. Durante essa apresentação, mostramos exemplos práticos dos jogos,
-                            explicamos a dinâmica das oficinas e destacamos o impacto positivo da metodologia no
-                            ambiente educacional.
-                        </p>
-                    </div>
+            <div class="container mb-5">
+                <div class="row">
+                    <div class="col-md-12" id='header-container'></div>
                 </div>
-                <div class="col-md-6 p-0"></div>
-
-
-                <!-- Caixa 2 -->
-                <div class="col-md-6 "></div>
-                <div class="col-md-6 p-3">
-                    <div id="box_equipe">
-                        <p>
-                            2° Passo: Entendimento das necessidades dos professores em relação ao conteúdo e aos jogos
-                            solicitados
-                            Após a apresentação, buscamos estabelecer um diálogo com os professores para entender as
-                            suas expectativas e as necessidades específicas de suas turmas. Essa etapa é essencial para
-                            alinhar o conteúdo das oficinas com os objetivos pedagógicos da instituição. Aqui, os
-                            professores compartilham suas experiências e desafios, permitindo que possamos escolher e
-                            adaptar os jogos e oficinas que melhor atendam às demandas de cada disciplina ou grupo de
-                            alunos. Com essa compreensão, o projeto torna-se mais personalizado e relevante para o
-                            contexto escolar.
-
-                        </p>
-                    </div>
-                </div>
-
-                <!-- Caixa 3 -->
-                <div class="col-md-6 caixa3 p-3">
-                    <div id="box_equipe3">
-                        <p>
-                            3° Passo: Escolha dos jogos para o desenvolvimento com os estudantes
-                            Com base nas conversas com os professores, escolhemos os jogos que melhor atendem às
-                            necessidades identificadas. Esses jogos são selecionados de acordo com a faixa etária, os
-                            objetivos educacionais e o potencial de desenvolvimento que oferecem. Nesta fase, também é
-                            levado em consideração o equilíbrio entre diferentes habilidades, como raciocínio lógico,
-                            criatividade, trabalho em equipe e a capacidade de lidar com frustrações. Garantimos que os
-                            jogos propostos sejam dinâmicos e envolventes, estimulando o aprendizado de maneira lúdica.
-                        </p>
-                    </div>
-                </div>
-                <div class="col-md-6 p-0"></div>
-
-                <!-- Caixa 4 -->
-                <div class="col-md-6 p-0"></div>
-                <div class="col-md-6 p-3 fotos">
-                    <div id="box_equipe4">
-                        <p>
-                            4° Passo: Definir se serão feitas as oficinas ou a formação dos professores para aplicação
-                            própria
-                            Com os jogos escolhidos, discutimos com a escola se a melhor abordagem será realizar
-                            oficinas diretamente com os estudantes ou capacitar os professores para que eles mesmos
-                            possam aplicar os jogos em suas turmas. Caso optem pela formação dos educadores, organizamos
-                            treinamentos específicos, onde ensinamos não só as regras dos jogos, mas também como
-                            utilizá-los de maneira pedagógica e adaptativa em sala de aula. O objetivo é garantir que os
-                            professores se sintam preparados e confiantes para utilizar as ferramentas do projeto de
-                            forma eficaz.
-                        </p>
-                    </div>
-                </div>
-
-                <!-- Caixa 5 -->
-                <div class="col-md-6 caixa3 p-3">
-                    <div id="box_equipe5">
-                        <p>
-                            5° Passo: Adaptação dos jogos e do conteúdo para idades e contextos apropriados
-                            Antes de qualquer aplicação, ajustamos os jogos e atividades conforme a faixa etária e o
-                            nível de desenvolvimento dos estudantes. Alguns jogos podem ser simplificados ou, em alguns
-                            casos, ampliados em termos de complexidade para manter a relevância educacional. Além disso,
-                            realizamos adaptações culturais e temáticas conforme a realidade da escola, garantindo que o
-                            conteúdo seja inclusivo e esteja em sintonia com o cotidiano dos alunos. Esse processo de
-                            adaptação é fundamental para o sucesso do projeto e para garantir o engajamento dos
-                            participantes.
-                        </p>
-                    </div>
-                </div>
-                <div class="col-md-6 p-0"></div>
-
-
-                <!-- Caixa 6 -->
-                <div class="col-md-6 p-0"></div>
-                <div class="col-md-6 p-3 fotos">
-                    <div id="box_equipe6">
-                        <p>
-                            6° Passo: Aplicação do projeto Jogoteca
-                            Finalmente, colocamos o projeto em prática! As oficinas ou formações são realizadas conforme
-                            o planejamento acordado com a escola. A aplicação envolve momentos lúdicos e educativos,
-                            onde os estudantes, ou professores em formação, experimentam os jogos e atividades em um
-                            ambiente interativo e descontraído. Durante a aplicação, estamos atentos a feedbacks em
-                            tempo real, para ajustar o andamento das oficinas, se necessário, garantindo que todos
-                            aproveitem ao máximo a experiência. Ao final, avaliamos os resultados e colhemos as
-                            impressões para aperfeiçoar futuras edições do projeto.
-                        </p>
-                    </div>
-                </div>
-
-
             </div>
         </div>
 
-
-
-
-
-
+        <div class="container-fluid">
+            <div class="row align-items-center fundo_equipe" id='content-container'></div>
+        </div>
     </main>
 
 
     <footer class="footer text-center text-md-start">
         <div class="container">
-          <div class="row align-items-center d-flexs flex-row">
-            <div class="col-md-6">
-              <h5>Fique em Contato</h5>
-              <p>Entre em contato em nossas redes sociais ou nos contacte diretamente.</p>
-              <div class="social-icons">
-                <a href="#" aria-label="Instagram"><i class="bi bi-instagram icon"></i></a>
-                <a href="#" aria-label="YouTube"><i class="bi bi-youtube icon"></i></a>
-                <a href="#" aria-label="Facebook"><i class="bi bi-facebook icon"></i></a>
-              </div>
-              <div class="contact-info mt-3">
-                <p><i class="bi bi-telephone-fill"></i> (11) 9 9757-9540</p>
-                <p><i class="bi bi-envelope-fill"></i> <a href="mailto:passatempo@passatempoeducativo.org.br">passatempo@passatempoeducativo.org.br</a></p>
-              </div>
-            </div>
-            <div id="qr-code-area">
-                <div class="container-fluid">
-                    <div class="square1"></div>
-                    <div class="square2"></div>
+            <div class="row align-items-center d-flexs flex-row">
+                <div class="col-md-6">
+                    <h5>Fique em Contato</h5>
+                    <p>Entre em contato em nossas redes sociais ou nos contacte diretamente.</p>
+                    <div class="social-icons">
+                        <a href="#" aria-label="Instagram"><i class="bi bi-instagram icon"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="bi bi-youtube icon"></i></a>
+                        <a href="#" aria-label="Facebook"><i class="bi bi-facebook icon"></i></a>
+                    </div>
+                    <div class="contact-info mt-3">
+                        <p><i class="bi bi-telephone-fill"></i> (11) 9 9757-9540</p>
+                        <p><i class="bi bi-envelope-fill"></i> <a
+                                href="mailto:passatempo@passatempoeducativo.org.br">passatempo@passatempoeducativo.org.br</a>
+                        </p>
+                    </div>
+                </div>
+                <div id="qr-code-area">
+                    <div class="container-fluid">
+                        <div class="square1"></div>
+                        <div class="square2"></div>
 
+                    </div>
                 </div>
             </div>
-          </div>
-          <div class="text-center mt-4">
-            <small>Copyright © 2023 Passatempo Educativo. Todos os Direitos Reservados.</small>
-          </div>
+            <div class="text-center mt-4">
+                <small>Copyright © 2023 Passatempo Educativo. Todos os Direitos Reservados.</small>
+            </div>
         </div>
-      </footer>
+    </footer>
 
-
-
-
-
+    <script src="assets/js/team-texts.js"></script>
+    <script src="assets/js/navbar.js"></script>
     <script src="assets/js/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
