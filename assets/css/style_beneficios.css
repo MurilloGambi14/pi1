@@ -106,8 +106,8 @@ body {
 }
 
 .square1{
-    width: 300px;
-    height: 300px;
+    width: 200px;
+    height: 200px;
     background-color: #ffffff;
     border-top-left-radius: 20px;
     border-bottom-right-radius: 20px;
@@ -121,8 +121,8 @@ body {
 }
 
 .square2{
-    width: 300px;
-    height: 300px;
+    width: 200px;
+    height: 200px;
     background-color: #D9D9D9;
     border-top-left-radius: 20px;
     border-bottom-right-radius: 20px;

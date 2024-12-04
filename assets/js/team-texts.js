@@ -8,7 +8,7 @@ async function loadTeamHeaderTexts() {
 
   const container = document.getElementById('header-container')
 
-  container.innerHTML = `<p style="color:  #ffffffd4; font-size: 20px;" class="rounded-3 p-4 ">${texts[0].content}
+  container.innerHTML = `<p style="color:  white ; font-size: 16px; font-weight: 900" class="rounded-3 p-2 mb-3">${texts[0].content}
                         </p>`
 }
 
