@@ -37,7 +37,7 @@ db.on('open', () => {
 const app = fastify()
 
 app.register(cors, {
-  origin: 'http://127.0.0.1:5502',
+  origin: 'http://127.0.0.1:5503',
   credentials: true,
   allowedHeaders: ['Set-Cookie', 'Content-Type']
 })
