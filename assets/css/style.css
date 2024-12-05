@@ -119,6 +119,40 @@ body {
 }
 
 
+.patrocinadores-section{
+    height: fit-content;
+    background-color: #ffffff;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+#patro-1{
+    height: 200px;
+    width: 300px;
+    background-image: url(/assets/img/dsm-firmenich-300x158-1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#patro-2{
+    height: 300px;
+    width: 300px;
+    background-image: url(/assets/img/leiii-removebg-preview.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#patro-3{
+    height: 350px;
+    width: 300px;
+    background-image: url(/assets/img/teste-removebg-preview.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
 @media(max-width:455px){
 
     .footer {
