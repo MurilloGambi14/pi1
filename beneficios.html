@@ -226,7 +226,34 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
         integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
         crossorigin="anonymous"></script>
-
+        <script>
+            (function (d) {
+                var s = d.createElement("script");
+                s.setAttribute("data-account", "DLmQUCAOoW");
+                s.setAttribute("src", "https://cdn.userway.org/widget.js");
+                (d.body || d.head).appendChild(s);
+    
+                s.onload = function () {
+                    const observer = new MutationObserver(() => {
+                        const userwayWidget = document.querySelector(
+                            ".userway_buttons_wrapper"
+                        );
+                        if (userwayWidget) {
+                            userwayWidget.style.position = "fixed";
+                            userwayWidget.style.top = "50%";
+                            userwayWidget.style.left = "50%";
+                            userwayWidget.style.transform = "translate(-50%, -50%)";
+                            userwayWidget.style.zIndex = "1000";
+                        }
+                    });
+    
+                    observer.observe(document.body, {
+                        childList: true,
+                        subtree: true,
+                    });
+                };
+            })(document);
+        </script>
 </body>
 
 </html>

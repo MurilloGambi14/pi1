@@ -64,3 +64,10 @@ body {
 }
 
 
+.userway_buttons_wrapper {
+    position: fixed !important;
+    top: 50% !important;
+    left: 0% !important;
+    transform: translate(-0, -50%) !important;
+    z-index: 1000 !important; 
+}
