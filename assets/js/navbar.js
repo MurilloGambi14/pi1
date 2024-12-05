@@ -1,6 +1,6 @@
 async function isUserLoggedIn() {
   try {
-    const response = await fetch('http://127.0.0.1:3333/auth/verify', {
+    const response = await fetch('http://127.0.0.1:7777/auth/verify', {
       method: 'GET',
       credentials: 'include'
     });

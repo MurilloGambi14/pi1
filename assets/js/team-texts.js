@@ -1,5 +1,5 @@
 async function loadTeamHeaderTexts() {
-  const response = await fetch('http://127.0.0.1:3333/texts/teamHeader', {
+  const response = await fetch('http://127.0.0.1:7777/texts/teamHeader', {
     method: 'GET',
   })
 
@@ -13,7 +13,7 @@ async function loadTeamHeaderTexts() {
 }
 
 async function loadStepsTexts() {
-  const response = await fetch('http://127.0.0.1:3333/texts/team', {
+  const response = await fetch('http://127.0.0.1:7777/texts/team', {
     method: 'GET',
   });
 

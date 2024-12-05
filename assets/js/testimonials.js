@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   async function fetchAndRenderFeedbacks() {
     try {
-      const response = await fetch('http://127.0.0.1:3333/feedbacks')
+      const response = await fetch('http://127.0.0.1:7777/feedbacks')
       if(!response.ok) {
         throw new Error('Erro ao buscar feedbacks')
       }

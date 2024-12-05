@@ -1,6 +1,6 @@
 async function isUserLoggedIn() {
   try {
-    const response = await fetch('http://127.0.0.1:3333/auth/verify', {
+    const response = await fetch('http://127.0.0.1:7777/auth/verify', {
       method: 'GET',
       credentials: 'include'
     });
@@ -30,7 +30,7 @@ async function sendFeedback() {
   const data = { username, comment }
 
   try {
-    const response = await fetch('http://127.0.0.1:3333/feedbacks', {
+    const response = await fetch('http://127.0.0.1:7777/feedbacks', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(data)
@@ -53,7 +53,7 @@ async function sendFeedback() {
 
 async function loadFeedbacks() {
   try {
-    const response = await fetch('http://127.0.0.1:3333/feedbacks');
+    const response = await fetch('http://127.0.0.1:7777/feedbacks');
     const feedbacks = await response.json();
 
     const tableBody = document.getElementById('feedbackTableBody');
@@ -76,7 +76,7 @@ async function loadFeedbacks() {
 
 async function deleteFeedback(feedbackId) {
   try {
-    const response = await fetch(`http://127.0.0.1:3333/feedbacks/${feedbackId}`, {
+    const response = await fetch(`http://127.0.0.1:7777/feedbacks/${feedbackId}`, {
       method: 'DELETE',
     });
 
@@ -93,7 +93,7 @@ async function deleteFeedback(feedbackId) {
 }
 
 async function logout() {
-    await fetch('http://127.0.0.1:3333/auth/logout', {
+    await fetch('http://127.0.0.1:7777/auth/logout', {
       method: 'POST',
       credentials: 'include'
     });
@@ -141,7 +141,7 @@ const categoryMapping = {
 
 async function loadTexts() {
   try {
-    const response = await fetch('http://127.0.0.1:3333/texts');
+    const response = await fetch('http://127.0.0.1:7777/texts');
     const data = await response.json();
 
     const tableBody = document.getElementById('textTableBody');
@@ -171,7 +171,7 @@ async function saveText(id) {
   };
 
   try {
-    const response = await fetch(`http://127.0.0.1:3333/texts/${id}`, {
+    const response = await fetch(`http://127.0.0.1:7777/texts/${id}`, {
       method: 'PUT',
       headers: {
         'Content-Type': 'application/json'
@@ -191,7 +191,7 @@ async function saveText(id) {
 
 async function fetchGames() {
   try {
-      const response = await fetch('http://127.0.0.1:3333/games');
+      const response = await fetch('http://127.0.0.1:7777/games');
       const data = await response.json();
       return data.games;
   } catch (error) {
@@ -227,7 +227,7 @@ async function updateGameImage() {
     }
 
     try {
-        const response = await fetch(`http://127.0.0.1:3333/games/${gameId}/photo`, {
+        const response = await fetch(`http://127.0.0.1:7777/games/${gameId}/photo`, {
             method: 'PATCH',
             headers: {
                 'Content-Type': 'application/json',

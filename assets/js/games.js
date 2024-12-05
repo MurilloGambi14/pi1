@@ -25,7 +25,7 @@ function renderGames(games) {
 
 async function fetchGames() {
     try {
-        const response = await fetch('http://127.0.0.1:3333/games');
+        const response = await fetch('http://127.0.0.1:7777/games');
         const data = await response.json();
         return data.games;
     } catch (error) {

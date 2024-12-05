@@ -1,5 +1,5 @@
 async function loadMainTexts() {
-  const response = await fetch('http://127.0.0.1:3333/texts/main', {
+  const response = await fetch('http://127.0.0.1:7777/texts/main', {
     method: 'GET',
   })
 
