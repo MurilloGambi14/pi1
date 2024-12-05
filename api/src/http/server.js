@@ -71,7 +71,7 @@ app.register(updateGamePhoto)
 app.register(createGame)
 
 app.listen({
-  port: 3333
+  port: 7777
 }).then(() => {
-  console.log('Server running at 3333')
+  console.log('Server running at 7777')
 })
