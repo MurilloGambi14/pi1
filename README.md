@@ -14,5 +14,5 @@ A Jogoteca é um espaço onde os jogos não apenas divertem, mas também ensinam
 |     Ewerton da Cruz Pereira    |     24.10113-1     |     [ewerton40](https://github.com/ewerton40)     |     Documentação e Dev Front End    |
 |     Ian Akel de Oliveira   |     24.10058-8    |          |     Documentação e prototipação    |
 |     Lucas Bueno    |     24.10066-1    |     [Lucas-Bueno04](https://github.com/Lucas-Bueno04)     |     Dev Front End, Dev Back End e prototipação    |
-|     Arthur Del Rio Porta   |     23.01669-8    |          |    Apresentação    |
-|     Thiago Monteiro    |     24.10070-3    |          |     Aprensentação    |
+|     Arthur Del Rio Porta   |     23.01669-8    |          |    Aprensentação e prototipação    |
+|     Thiago Monteiro    |     24.10070-3    |          |     Aprensentação e prototipação   |
