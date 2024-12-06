@@ -73,5 +73,5 @@ app.register(createGame)
 app.listen({
   port: 7777
 }).then(() => {
-  console.log('Server running at 7777')
+  console.log('Server up and running!')
 })
